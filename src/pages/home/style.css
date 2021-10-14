@@ -1,33 +1,9 @@
-header .container{
-    border: 1px solid red;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-header .logo{
-    margin-left: 10px;
-    color: var(--vermelho);
-    font-family: 'Arial Black', Times;
-    font-size: 40px;
-}
-
-header nav a{
-    text-decoration: none;
-    color: #AAAAAA;
-    margin-right: 10px;
-}
-
-header nav a:hover{
-    color: #fff;
-}
-
 /* Filme Principal */
 .filme-principal{
-    font-size: 16px;
+    font-size: 18px;
     background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url(../../assets/capa.jpeg);
     
-    height: 500px;
+    /* height: 120%; */
     background-size: cover;
 
     display: flex;
@@ -37,34 +13,40 @@ header nav a:hover{
 }
 
 .filme-principal .descricao{
-    margin-top: 10px;
-    margin-bottom: 40px;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .titulo{
-    margin-top: 23%;
+    margin-top: 21%;
     font-size: 40px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Helvetica Neue', Arial;
 }
 
-.btn{
-    background-color: rgba(0,0,0,.50);
-    border: none;
-    border-radius: 3px;
-    color: white;
-
-    padding: 15px 30px;
-    margin-right: 15px;
-    font-size: 12px;
-    cursor: pointer;
+.container{
+    margin-left: 20px;
 }
 
-.btn:hover{
-    background-color: white;
-    color: black;
-    transition: .3s ease all;
+.container .descricao{
+    width: 50%;
 }
 
-.btn .btnIcon{
-    margin-right: 8px;
+@media(max-width:720px) {
+    .filme-principal{
+        justify-content: center;
+    }
+    .container{
+        margin-left: 0;
+    }
+    .container .descricao{
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+    }
+    .descricao{
+        padding: 0 13px; 
+    }
+    .titulo{
+        margin-top: 30%;
+    }
 }

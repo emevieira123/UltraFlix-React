@@ -1,0 +1,30 @@
+.carouselContainer {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .seperator {
+    width: 100%;
+  }
+  
+  .controls-wrapper {
+    width: 100%;
+  }
+  
+  .carousel-wrapper {
+    width: 100%;
+  }
+  
+  .rec-carousel-item:focus {
+    outline: none;
+    box-shadow: inset 0 0 1px 0px violet;
+  }
+  
+  .imgCarrosel{
+      width: 100%;
+      height: 400px;
+  }

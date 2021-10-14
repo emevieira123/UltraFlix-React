@@ -1,0 +1,35 @@
+header .container{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAAAAA;
+    margin-right: 20px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+@media(max-width: 720px) {
+    header .container{
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0;
+    }    
+
+    header nav a{
+        margin-left: 0;
+        font-size: 16px;
+    }
+}

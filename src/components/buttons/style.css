@@ -1,0 +1,32 @@
+.btn{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    border-radius: 3px;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: white;
+    color: black;
+    transition: .3s ease all;
+}
+
+.btn .btnIcon{
+    margin-right: 8px;
+}
+
+@media(max-width: 720px) {
+    .botoes{
+        display: flex;
+        justify-content: center;
+    }
+    .btn{
+        margin-bottom: 4px;
+    }
+}

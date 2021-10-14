@@ -1,29 +1,18 @@
 import React from 'react';
-// import capa from "../../assets/capa.jpeg";
+import BtnPrincipal from '../../components/buttons'
+import Carrosel from '../../components/carrosel';
+import LogoMenu from '../../components/header';
 import './style.css';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPlay, faInfoCircle } from '@fortawesome/free-solid-svg-icons'
 
 export default function Home() {
     return (
         <>
-            <header>
-                <div className="container">
-                    <h2 className="logo">ULTRAFIX</h2>
-                    <nav>
-                        <a href="http://localhost:3000/">Início</a>
-                        <a href="http://localhost:3000/">Séries</a>
-                        <a href="http://localhost:3000/">Filmes</a >
-                        <a href="http://localhost:3000/">Bombando</a>
-                    </nav>
-                </div>
-            </header>
-
             <main>
                 <div className="filme-principal">
                     <div className="container">
-                        <h3 className="titulo">VENOM</h3>
+                        <LogoMenu />
+                        <h3 className="titulo"> </h3>
                         <p className="descricao">
                             O jornalista Eddie Brock desenvolve
                             força e poder sobre-humanos quando seu
@@ -32,18 +21,12 @@ export default function Home() {
                             as novas e perigosas habilidades de Eddie
                         </p>
 
-                        <div className="botoes">
-                            <button className="btn">
-                                <FontAwesomeIcon className="btnIcon" icon={faPlay} />
-                                ASSISTIR AGORA
-                            </button>
-                            <button className="btn">
-                                <FontAwesomeIcon className="btnIcon" icon={faInfoCircle} />
-                                MAIS INFORMAÇÕES
-                            </button>
-                        </div>
+                        <BtnPrincipal />
 
                     </div>
+                </div>
+                <div>
+                    <Carrosel />
                 </div>
             </main>
         </>
